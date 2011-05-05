@@ -14,7 +14,7 @@ the propogation of one project's changes to other projects explicit.
 Instructions
 ------------
 
-1. ``git clone --recursive https://github.com/kergoth/oe-core-template``
+1. ``git clone --recursive https://github.com/kergoth/oe-core-template angstrom``
 2. ``cd oe-core-template``
 3. ``. ./setup.sh``
 4. ``bitbake -p``
