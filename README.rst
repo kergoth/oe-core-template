@@ -1,4 +1,4 @@
-Summary:
+Summary
 -------
 
 This is a basic oe-core/meta-openembedded based setup, using my personal
@@ -23,3 +23,29 @@ To update to the latest versions of the layers, master branch:
 
 1. ``git submodule foreach git checkout master``
 2. ``git submodule foreach git pull``
+
+Notes
+-----
+
+For the user new to oe-core, certain changes in behavior should be noted.
+
+During a build, you may notice a message about "psuedo" being unavailable, and
+it building this. Pseudo is a fakeroot-like project which is used by oe-core
+to resolve permissions issues with do_install and packaging. In the new world,
+the entire bitbake build runs underneith pseudo, and it gets enabled via
+environment variables when spawning our tasks. The aforementioned message is
+an indication that the bootstrap process is happening. Bitbake is being used
+to build pseudo-native, so it can be used to run subsequent bitbake
+executions.
+
+Next, it's worth noting, though it may not have any practical impact on usage,
+that oe-core uses the 'fetch2' bitbake module, which is an in progress rework
+of bb.fetch.
+
+For those working on recipes, it is further worth noting that licenses are
+more tightly checked and controlled. All recipes must have LICENSE set, and
+you will be warned if no license files are referred to, for the license
+'checksumming' (it warns you if the upstream license changes).
+
+I would strongly advise reading the Poky Handbook, as the poky repository
+became oe-core - http://www.pokylinux.org/doc/poky-handbook.html.
