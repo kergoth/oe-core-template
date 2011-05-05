@@ -17,4 +17,4 @@ Instructions
 1. ``git clone --recursive https://github.com/kergoth/oe-core-template``
 2. ``cd oe-core-template``
 3. ``. ./setup.sh``
-4. ``bitbake -p``
+4. ``bitbake core-image-minimal``
