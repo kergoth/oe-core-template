@@ -18,3 +18,8 @@ Instructions
 2. ``cd oe-core-template``
 3. ``. ./setup.sh``
 4. ``bitbake core-image-minimal``
+
+To update to the latest versions of the layers, master branch:
+
+1. ``git submodule foreach git checkout master``
+2. ``git submodule foreach git pull``
