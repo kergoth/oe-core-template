@@ -3,3 +3,7 @@ export PATH
 
 # Used by poky-qemu, scripts/bitbake
 export BUILDDIR=$PWD
+
+if [ -e setup.sh.$HOSTNAME ]; then
+    . ./setup.sh.$HOSTNAME
+fi
