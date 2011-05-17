@@ -7,3 +7,6 @@
 [submodule "meta-oe"]
 	path = meta-oe
 	url = git://git.openembedded.org/meta-openembedded
+[submodule "meta-micro"]
+	path = meta-micro
+	url = git://pbcl.net/git/meta-micro.git
