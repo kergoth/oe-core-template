@@ -19,7 +19,6 @@ Instructions
 3. ``make``
 
 To list the available arguments for the makefile wrapper, run ``make help``.
-To update to the latest versions of the layers, run ``make update``.
 
 Notes
 -----

@@ -17,6 +17,8 @@ help:
 	@echo >&2 "       make clean-sstate"
 	@echo >&2 "       make graph-TARGET"
 	@echo >72 "         Generate dependency graphs for TARGET"
+	@echo >&2 "       make update"
+	@echo >72 "         Update to the latest bitbake and metadata"
 
 clean-sstate:
 	@echo Cleaning sstate files...
@@ -33,6 +35,11 @@ graph-%:
 clean-%:
 	@echo Cleaning $*...
 	@$(call bitbake,-c clean,$*)
+
+update:
+	@echo Updating repositories...
+	@git submodule foreach git fetch origin master
+	@git submodule foreach git checkout FETCH_HEAD
 
 %:
 	@echo Building $*...
