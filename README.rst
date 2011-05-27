@@ -16,8 +16,9 @@ Instructions
 
 1. ``git clone --recursive https://github.com/kergoth/oe-core-template``
 2. ``cd oe-core-template``
-3. ``make`` **or** ``. ./setup.sh; bitbake core-image-minimal``
+3. ``make``
 
+To list the available arguments for the makefile wrapper, run ``make help``.
 To update to the latest versions of the layers, run ``make update``.
 
 Notes

@@ -15,6 +15,8 @@ help:
 	@echo >&2 "       make clean-TARGET"
 	@echo >&2 "       make clean"
 	@echo >&2 "       make clean-sstate"
+	@echo >&2 "       make graph-TARGET"
+	@echo >72 "         Generate dependency graphs for TARGET
 
 clean-sstate:
 	@echo Cleaning sstate files...
@@ -23,6 +25,10 @@ clean-sstate:
 clean:
 	@echo Cleaning build directory...
 	@-rm -rf build/*
+
+graph-%:
+	@echo Graphing $*...
+	@$(call bitbake,-g,$*)
 
 clean-%:
 	@echo Cleaning $*...
