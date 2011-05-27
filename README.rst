@@ -16,13 +16,9 @@ Instructions
 
 1. ``git clone --recursive https://github.com/kergoth/oe-core-template``
 2. ``cd oe-core-template``
-3. ``. ./setup.sh``
-4. ``bitbake core-image-minimal``
+3. ``make`` *or* ``. ./setup.sh; bitbake core-image-minimal``
 
-To update to the latest versions of the layers, master branch:
-
-1. ``git submodule foreach git checkout master``
-2. ``git submodule foreach git pull``
+To update to the latest versions of the layers, run ``make update``.
 
 Notes
 -----
