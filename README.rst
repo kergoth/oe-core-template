@@ -16,13 +16,9 @@ Instructions
 
 1. ``git clone --recursive https://github.com/kergoth/oe-core-template angstrom``
 2. ``cd oe-core-template``
-3. ``. ./setup.sh``
-4. ``bitbake console-image``
+3. ``make``
 
-To update to the latest versions of the layers, master branch:
-
-1. ``git submodule foreach git checkout master``
-2. ``git submodule foreach git pull``
+To list the available arguments for the makefile wrapper, run ``make help``.
 
 Notes
 -----
