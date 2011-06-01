@@ -26,7 +26,7 @@ clean-sstate:
 
 clean:
 	@echo Cleaning build directory...
-	@-rm -rf build/* pseudodone
+	@-rm -rf build*/* pseudodone
 
 graph-%:
 	@echo Graphing $*...
