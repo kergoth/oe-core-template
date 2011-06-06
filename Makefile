@@ -1,10 +1,7 @@
 # Makefile provided as a convenience wrapper around setup.sh and bitbake
 
-defaulttarget=core-image-minimal
-
-define bitbake
-. ./setup.sh && bitbake $1 $2 $3 $4
-endef
+defaulttarget = core-image-minimal
+UI ?= knotty
 
 $(defaulttarget):
 
@@ -50,3 +47,7 @@ update:
 %:
 	@echo Building $*...
 	@$(call bitbake,$*)
+
+define bitbake
+. ./setup.sh && bitbake $(if $(UI),-u $(UI)) $1 $2 $3 $4
+endef
