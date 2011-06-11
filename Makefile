@@ -44,6 +44,14 @@ update:
 	@git submodule foreach git fetch origin master
 	@git submodule foreach git checkout FETCH_HEAD
 
+env:
+	@echo Showing environment
+	@$(call bitbake,-e)
+
+env-%:
+	@echo Showing environment for $*
+	@$(call bitbake,-e,$*)
+
 %:
 	@echo Building $*...
 	@$(call bitbake,$*)
