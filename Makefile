@@ -1,6 +1,6 @@
 # Makefile provided as a convenience wrapper around setup.sh and bitbake
 
-defaulttarget=console-image
+defaulttarget = core-image-minimal
 UI ?= knotty
 
 $(defaulttarget):
