@@ -16,7 +16,7 @@ Instructions
 
 1. ``git clone --recursive https://github.com/kergoth/oe-core-template``
 2. ``cd oe-core-template``
-3. ``make``
+3. ``make`` _or_ ``. ./setup.sh; bitbake <target>``
 
 To list the available arguments for the makefile wrapper, run ``make help``.
 
