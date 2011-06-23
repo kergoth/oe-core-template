@@ -9,9 +9,11 @@ help:
 	@echo >&2 "Note: Default target is $(defaulttarget)"
 	@echo >&2
 	@echo >&2 "Usage: make [TARGET]"
-	@echo >&2 "       make clean-TARGET"
 	@echo >&2 "       make clean"
 	@echo >&2 "       make clean-sstate"
+	@echo >&2 "       make clean-TARGET"
+	@echo >&2 "       make cleanall-TARGET"
+	@echo >&2 "       make cleansstate-TARGET"
 	@echo >&2 "       make graph-TARGET"
 	@echo >72 "         Generate dependency graphs for TARGET"
 	@echo >&2 "       make update"
@@ -38,6 +40,14 @@ rebuild-%:
 clean-%:
 	@echo Cleaning $*...
 	@$(call bitbake,-c clean,$*)
+
+cleanall-%:
+	@echo Running cleanall against $*...
+	@$(call bitbake,-c cleanall,$*)
+
+cleansstate-%:
+	@echo Running cleansstate against $*...
+	@$(call bitbake,-c cleansstate,$*)
 
 update:
 	@echo Updating repositories...
