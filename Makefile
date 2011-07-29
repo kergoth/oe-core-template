@@ -33,7 +33,7 @@ graph-%:
 
 rebuild-%:
 	@echo Cleaning $*...
-	@$(call bitbake,-c clean,$*)
+	@$(call bitbake,-c cleansstate,$*)
 	@echo Building $*...
 	@$(call bitbake,$*)
 
@@ -61,6 +61,10 @@ env:
 env-%:
 	@echo Showing environment for $*
 	@$(call bitbake,-e,$*)
+
+devshell-%:
+	@echo Starting devshell for $*
+	@$(call bitbake,-c,devshell,$*)
 
 %:
 	@echo Building $*...
