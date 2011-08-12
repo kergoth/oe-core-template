@@ -71,5 +71,5 @@ devshell-%:
 	@$(call bitbake,$*)
 
 define bitbake
-. ./setup.sh && bitbake $(if $(UI),-u $(UI)) $1 $2 $3 $4
+. ./setup.sh && bitbake -k $(if $(UI),-u $(UI)) $1 $2 $3 $4
 endef
