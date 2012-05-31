@@ -1,7 +1,7 @@
 # Makefile provided as a convenience wrapper around setup.sh and bitbake
 
 defaulttarget = core-image-minimal
-UI ?= knotty
+UI ?= knotty2
 
 $(defaulttarget):
 
