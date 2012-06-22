@@ -4,3 +4,6 @@
 [submodule "bitbake"]
 	path = bitbake
 	url = git://git.openembedded.org/bitbake
+[submodule "meta-yocto"]
+	path = meta-yocto
+	url = https://github.com/kergoth/meta-yocto
