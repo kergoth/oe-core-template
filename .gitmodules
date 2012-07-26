@@ -7,3 +7,6 @@
 [submodule "meta-yocto"]
 	path = meta-yocto
 	url = https://github.com/kergoth/meta-yocto
+[submodule "meta-sourcery"]
+	path = meta-sourcery
+	url = https://github.com/MentorEmbedded/meta-sourcery
