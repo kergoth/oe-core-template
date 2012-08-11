@@ -1,7 +1,7 @@
 # Makefile provided as a convenience wrapper around setup.sh and bitbake
 
 defaulttarget = core-image-base
-UI ?= knotty2
+export BITBAKE_UI ?= knotty2
 
 $(defaulttarget):
 
@@ -71,5 +71,5 @@ devshell-%:
 	@$(call bitbake,$*)
 
 define bitbake
-. ./setup.sh && bitbake -k $(if $(UI),-u $(UI)) $1 $2 $3 $4
+. ./setup.sh && bitbake -k $1 $2 $3 $4
 endef
