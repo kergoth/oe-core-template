@@ -6,10 +6,10 @@
 	url = git://git.openembedded.org/bitbake
 [submodule "meta-yocto"]
 	path = meta-yocto
-	url = https://github.com/kergoth/meta-yocto
+	url = git://github.com/kergoth/meta-yocto
 [submodule "meta-sourcery"]
 	path = meta-sourcery
-	url = https://github.com/MentorEmbedded/meta-sourcery
+	url = git://github.com/MentorEmbedded/meta-sourcery
 [submodule "meta-intel"]
 	path = meta-intel
 	url = git://git.yoctoproject.org/meta-intel.git
@@ -24,7 +24,7 @@
 	url = git://git.yoctoproject.org/meta-fsl-ppc.git
 [submodule "meta-fsl-arm"]
 	path = meta-fsl-arm
-	url = https://github.com/Freescale/meta-fsl-arm
+	url = git://github.com/Freescale/meta-fsl-arm
 [submodule "meta-oe"]
 	path = meta-oe
 	url = git://github.com/openembedded/meta-oe
