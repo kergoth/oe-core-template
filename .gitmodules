@@ -28,3 +28,6 @@
 [submodule "meta-oe"]
 	path = meta-oe
 	url = git://github.com/openembedded/meta-oe
+[submodule "poky"]
+	path = poky
+	url = git://git.yoctoproject.org/poky.git
