@@ -4,7 +4,7 @@ export PATH
 # Used by poky-qemu, scripts/bitbake
 export BUILDDIR=$PWD
 
-export BB_ENV_EXTRAWHITE="$BB_ENV_EXTRAWHITE MACHINE"
+export BB_ENV_EXTRAWHITE="$BB_ENV_EXTRAWHITE DISTRO MACHINE"
 
 if [ -e setup.sh.$HOSTNAME ]; then
     . ./setup.sh.$HOSTNAME
