@@ -4,4 +4,9 @@
 
 /build
 /sstate-cache/
+/db
+/buildhistory
+/cached-binaries
+/downloads
+/bitbake.lock
 /*.dot
