@@ -22,3 +22,9 @@
 [submodule "poky"]
 	path = poky
 	url = git://git.yoctoproject.org/poky.git
+[submodule "meta-beagleboard"]
+	path = meta-beagleboard
+	url = git://github.com/beagleboard/meta-beagleboard.git
+[submodule "meta-fsl-arm-extra"]
+	path = meta-fsl-arm-extra
+	url = git://github.com/Freescale/meta-fsl-arm-extra.git
