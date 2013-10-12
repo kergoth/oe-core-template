@@ -1,30 +1,40 @@
 [submodule "meta-sourcery"]
 	path = meta-sourcery
 	url = git://github.com/MentorEmbedded/meta-sourcery
+	branch = master
 [submodule "meta-intel"]
 	path = meta-intel
 	url = git://git.yoctoproject.org/meta-intel.git
+	branch = master
 [submodule "meta-mentor"]
 	path = meta-mentor
 	url = git://git.yoctoproject.org/meta-mentor.git
+	branch = master
 [submodule "meta-ti"]
 	path = meta-ti
 	url = git://git.yoctoproject.org/meta-ti.git
+	branch = master
 [submodule "meta-fsl-ppc"]
 	path = meta-fsl-ppc
 	url = git://git.yoctoproject.org/meta-fsl-ppc.git
+	branch = master
 [submodule "meta-fsl-arm"]
 	path = meta-fsl-arm
 	url = git://github.com/Freescale/meta-fsl-arm
+	branch = master
 [submodule "meta-oe"]
 	path = meta-oe
 	url = git://github.com/openembedded/meta-oe
+	branch = master
 [submodule "poky"]
 	path = poky
 	url = git://git.yoctoproject.org/poky.git
+	branch = master
 [submodule "meta-beagleboard"]
 	path = meta-beagleboard
 	url = git://github.com/beagleboard/meta-beagleboard.git
+	branch = master
 [submodule "meta-fsl-arm-extra"]
 	path = meta-fsl-arm-extra
 	url = git://github.com/Freescale/meta-fsl-arm-extra.git
+	branch = master
