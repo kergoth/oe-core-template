@@ -50,7 +50,7 @@ cleansstate-%:
 
 update:
 	@echo Updating repositories...
-	@git submodule foreach 'git checkout $$(git config -f ../.gitmodules "submodule.$$(basename "$$PWD").branch") && git pull --rebase'
+	@git submodule foreach 'git fetch && git checkout $$(git config -f ../.gitmodules "submodule.$$(basename "$$PWD").branch") && git pull --rebase'
 
 env:
 	@echo Showing environment
