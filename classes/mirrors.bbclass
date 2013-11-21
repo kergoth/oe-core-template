@@ -10,7 +10,8 @@ git://git.kernel.org/pub/ http://mirror.nexcess.net/kernel.org/ \n\
 (ftp|https?)://.*/.* http://sources.openembedded.org/ \n\
 (ftp|https?)://.*/.* http://www.angstrom-distribution.org/unstable/sources/ \n\
 \
-(cvs|svn|git|hg|bzr|osc|p4|svk)://.*/.* http://autobuilder.yoctoproject.org/sources/ \n\
-(cvs|svn|git|hg|bzr|osc|p4|svk)://.*/.* http://sources.openembedded.org/ \n\
-(cvs|svn|git|hg|bzr|osc|p4|svk)://.*/.* http://www.angstrom-distribution.org/unstable/sources/ \n\
+(cvs|svn|git|gitsm|hg|bzr|osc|p4|svk)://.*/.* http://downloads.yoctoproject.org/mirror/sources/ \n\
+(cvs|svn|git|gitsm|hg|bzr|osc|p4|svk)://.*/.* http://autobuilder.yoctoproject.org/sources/ \n\
+(cvs|svn|git|gitsm|hg|bzr|osc|p4|svk)://.*/.* http://sources.openembedded.org/ \n\
+(cvs|svn|git|gitsm|hg|bzr|osc|p4|svk)://.*/.* http://www.angstrom-distribution.org/unstable/sources/ \n\
 "
