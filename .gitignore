@@ -5,6 +5,7 @@
 /build
 /sstate-cache/
 /db
+/cache
 /buildhistory
 /cached-binaries
 /downloads
