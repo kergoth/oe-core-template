@@ -3,10 +3,10 @@
 /pseudodone
 
 /build
-/sstate-cache/
 /db
 /cache
 /buildhistory
+/sstate-cache
 /cached-binaries
 /downloads
 /bitbake.lock
