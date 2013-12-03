@@ -4,7 +4,7 @@
 	branch = master
 [submodule "meta-mentor"]
 	path = meta-mentor
-	url = git://git.yoctoproject.org/meta-mentor.git
+	url = git://github.com/MentorEmbedded/meta-mentor
 	branch = master
 [submodule "meta-oe"]
 	path = meta-oe
