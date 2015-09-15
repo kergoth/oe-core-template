@@ -8,7 +8,7 @@
 	branch = master
 [submodule "meta-oe"]
 	path = meta-oe
-	url = git://github.com/openembedded/meta-oe
+	url = git://github.com/openembedded/meta-openembedded
 	branch = master
 [submodule "poky"]
 	path = poky
