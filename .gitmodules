@@ -1,16 +1,12 @@
-[submodule "meta-sourcery"]
-	path = meta-sourcery
-	url = git://github.com/MentorEmbedded/meta-sourcery
-	branch = master
 [submodule "meta-mentor"]
 	path = meta-mentor
 	url = git://github.com/MentorEmbedded/meta-mentor
-	branch = master
 [submodule "meta-oe"]
 	path = meta-oe
 	url = git://github.com/openembedded/meta-openembedded
-	branch = master
-[submodule "poky"]
-	path = poky
-	url = git://git.yoctoproject.org/poky.git
-	branch = master
+[submodule "meta-sourcery"]
+	path = meta-sourcery
+	url = git://github.com/MentorEmbedded/meta-sourcery
+[submodule "oe-core"]
+	path = oe-core
+	url = https://github.com/openembedded/openembedded-core
